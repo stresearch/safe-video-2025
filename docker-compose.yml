@@ -1,0 +1,15 @@
+services:
+  safe-test:
+    image: safe-test
+    build: .
+    environment:
+      - SAFE_DATASET_REPO=dsf-sandbox/video-challenge-debug
+      - MODEL_REPO=safe-challenge/safe-example-submission
+      - HF_TOKEN=${HF_TOKEN}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: [ '0' ]
+              capabilities: [ gpu ]

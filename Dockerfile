@@ -1,6 +1,3 @@
-FROM huggingface/competitions:latest
-WORKDIR /app/safe
-COPY requirements.txt .
-RUN pip install -r requirements.txt
+FROM ghcr.io/stresearch/competitions:latest
 COPY * .
 CMD bash debug.sh
