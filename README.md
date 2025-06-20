@@ -80,6 +80,8 @@ For any question regarding paper submission, please contact chairs: acm.ihmmsec2
 
 ## 📝 Tasks  
 
+[![](pilot_grid.png)](pilot_grid.mp4)
+
 The competition will consist of three detection tasks. For each task, the object is to detect if an audio file contains machine generated speech. Not all tasks will be open at the same time. 
 - Practice (✅ Open): A practice task to troubleshoot model submission.
         [https://huggingface.co/spaces/safe-challenge/SAFEChallengePractice](https://huggingface.co/spaces/safe-challenge/SAFEChallengePractice)
