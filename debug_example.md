@@ -5,7 +5,7 @@ To debug your submission, you can reproduce all the steps locally.
 See example [Dockerfile](Dockerfile):
 
 ```Dockerfile
-FROM huggingface/competitions:latest
+FROM ghcr.io/stresearch/competitions:latest
 WORKDIR /tmp
 COPY requirements.txt .
 RUN pip install -r requirements.txt
@@ -18,9 +18,9 @@ and [debug.sh](debug.sh):
 ```shell
 # change this to your HF token if you accessing private repos
 export HF_TOKEN=mytoken 
-export SAFE_DATASET_REPO=safe-challenge/safe-challenge-practice-dataset
+export SAFE_DATASET_REPO=safe-challenge/video-challenge-pilot-debug
 # change this to your model that you want to test
-export MODEL_REPO=safe-challenge/safe-example-submission
+export MODEL_REPO=safe-challenge/video-challenge-pilot-debug
 export DATASET_PATH=/tmp/data
 export MODEL_PATH=/tmp/model
 export HF_HUB_ENABLE_HF_TRANSFER=1
