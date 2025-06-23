@@ -69,7 +69,7 @@ The SAFE: Synthetic Video Challenge at APAI @ ICCV 2025 will consist of several 
 
 This is a script based competetion. No data will be released before the competition. A subset of the data may be released after the competition. We will be using [hugginface competions platform](https://github.com/huggingface/competitions).
 
-### 📂 Create Model Repo  
+### 📂 1. Create Model Repo  
 Participants will be required to submit their model to be evaluated on the dataset by creating a [huggingface](https://huggingface.co/new) model repository. Please use [the example model repo](https://huggingface.co/safe-challenge/safe-example-submission) as a template.
 - **The model that you submit will remain private**. No one inlcuding the challenge organizers will have access to the model repo unless you decide to make the repo public.
 - The model will be expected to read in the dataset and output file containing a **detection score, binary decision and inference time** for every input example.
@@ -88,7 +88,7 @@ Participants will be required to submit their model to be evaluated on the datas
   - **During evalation, container will not have access to the internet**. Participants should include all other required dependencies in the model repo.
   - **💡 Remember: you can add anything to your model repo** like models, python packages, etc.
 
-### 🔘 Submit  
+### 🔘 2. Submit  
 Once your model is ready, it's time to submit:   
   - Go the task submision space (there is a seperate space for every task)
   - Login with your Huggingface Credentials
@@ -110,9 +110,9 @@ We provide an example model submission repo and a practice competition for troub
 
 All submissions will be evalulated using balanced accuracy. Balanced accuracy is defined as an average of true positive rate and true negative rate. 
 
-The competition page will maintain a public leaderboard and a private leaderboard. The data will be devided along the sources such that public leaderboard will be a subset of the private leaderboard. Public leaderboard will also show error rates for every source, However, the specific source name will be anonymized. For example, public leaderboard will show scores for 4 sources while the private leaderboard will be score on additional 4 sources for 8 sources total. See the following table as an example.
+The competition page will maintain a public leaderboard and a private leaderboard. The data will be devided along the sources such that public leaderboard will be a subset of the private leaderboard. A detailed public leaderboard will also show error rates for every source, However, the specific source name will be anonymized.
 
-<img width="1572" alt="image" src="https://github.com/user-attachments/assets/ec4339ef-589b-4f76-ae2f-a03a6ed6d7d3" />
+<!--  <img width="1572" alt="image" src="https://github.com/user-attachments/assets/ec4339ef-589b-4f76-ae2f-a03a6ed6d7d3" /> -->
 
 To enable these deeper analyses and fairness evaluations, all participants are required to submit both:
 A hard binary prediction (synthetic vs. real)
