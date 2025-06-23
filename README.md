@@ -7,43 +7,19 @@
 
 ![](logo.jpg)
 
-**👉 All participants are required to register for the competition by filling out this [Google Form](https://forms.gle/5J8Yuh41Lv8GAF7w8)**
+**👉 All participants are required to register for the competition by filling out this [Google Form](https://forms.gle/46DZUGGzk2wdS64z7)**
 
-[📊 Overview](#-overview) • [🥇 Detailed Leaderboard](#-detailed-leaderboard) • [🏆 Prize](#-prize) • [📜 Paper Submission and Dates](#-paper-submission-and-dates) • [📝 Tasks](#-tasks) • [📈 Data](#-data) • [🤖 Model Submission](#-model-submission) • [📂 Create Model Repo](#-create-model-repo) • [🔘 Submit](#-submit) • [🆘 Helpful Stuff](#-helpful-stuff) • [🔍 Evaluation](#-evaluation) • [⚖️ Rules](#️-rules)
+[📊 Overview](#-overview) • [🥇 Detailed Leaderboard](#-detailed-leaderboard) • [🏆 Prize](#-prize) • [📢Results Sharing and Poster Session](#-results-sharing-and-poster-session) • [📝 Tasks](#-challenge-tasks) • [📈 Data](#-data) • [🤖 Model Submission](#-model-submission) • [📂 Create Model Repo](#-create-model-repo) • [🔘 Submit](#-submit) • [🆘 Helpful Stuff](#-helpful-stuff) • [🔍 Evaluation](#-evaluation) • [⚖️ Rules](#️-rules)
 
 ## 📣 Updates
 
-2025-04-23
-- Added an accuracy heatmap on generated data by augmentation method for Task 2 and Task 3 in the heatmaps section of [Public Leaderboard](https://safe-challenge-leaderboard-public.hf.space). Note the methods are annonimized and are different for task 2 and 3.
 
-2025-04-14
-- Task 3 is not open Detection of Laundered Audio. [https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask3](https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask3)
-
-2025-04-12
-- Upgraded rate limits to resolve `Hugging Face Hub is unreachable, please try again later` error
-
-2025-04-08
-- Provided updated information on Round 1 and Round 2 paper and poster submission processes.
-
-2025-04-07
-- Updated [debug example](debug_example.md) to turn off network access when running model to better reproduce submissions on HF
-
-2025-04-04
-- New detailed public [leaderboard space](https://huggingface.co/spaces/safe-challenge/leaderboard-public)
-
-2025-04-03  
-- Task 2 is now open. Detection of Processed Audio. [https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask2](https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask2)
-- 🔥 [Example on including a custom environment in your model repo](https://huggingface.co/safe-challenge/safe-example-submission-custom-env)
-
-2025-03-25
-- Added two baselines to the leaderboard
-- Added [discord server](https://discord.gg/bxNsutKmTH) for additional help/support/discussion/etc.
 
 ## 📊 Overview
 
-To advance the state of the art in audio forensics, we are launching a funded evaluation challenge at [IH&MMSEC2025](https://www.ihmmsec.org) to drive innovation in detecting and attributing synthetic and manipulated audio artifacts. This challenge will focus on several critical aspects, including generalizability across diverse audio sources, robustness against evolving synthesis techniques, and computational efficiency to enable real-world applications. The rapid advancements in audio synthesis, fueled by the increasing availability of new generators and techniques, underscore the urgent need for effective solutions to authenticate audio content and combat emerging threats. Sponsored by the ULRI Digital Safety Research Institute, this initiative aims to mobilize the research community to address this pressing issue.  
+To advance the state of the art in video forensics, we are launching a funded evaluation challenge at the [Authenticity and Provenance in the Age of Generative AI (APAI) workshop](https://sites.google.com/berkeley.edu/apai-iccv2025) at ICCV 2025. This challenge will drive innovation in detecting and attributing fully synthetic and manipulated video content. It will focus on several critical dimensions, including generalizability across diverse visual domains, robustness against evolving generative video techniques, and scalability for real-world deployment. As generative video technologies rapidly advance—with increasing accessibility and sophistication of image-to-video, text-to-video, and adversarially optimized pipelines—the need for effective and reliable solutions to authenticate visual content has become urgent. Sponsored by the ULRI Digital Safety Research Institute, this initiative aims to mobilize the research community to confront these challenges and strengthen global efforts in media integrity and trust. 
 
-Sign up here to participate and receive updates: [Google Form](https://forms.gle/5J8Yuh41Lv8GAF7w8)
+Sign up here to participate and receive updates: [Google Form](https://forms.gle/46DZUGGzk2wdS64z7)
 
 ## 🥇 Detailed Leaderboard
 [Public Leaderboard](https://safe-challenge-leaderboard-public.hf.space)
@@ -58,51 +34,31 @@ Sign up here to participate and receive updates: [Google Form](https://forms.gle
 
 ## 🏆 Prize
 
-The most promising solutions may be eligible for research grants to further advance their development. A travel stipend will be available to the highest-performing teams to support attendance at the IH&MMSEC workshop, where they can present their technical approach and results.
+The most promising solutions may be eligible for research grants to further advance their development. A travel stipend will be available to the highest-performing teams to support attendance at the APAI workshop at ICCV 2025, where teams can showcase their technical approach and results.
 
 **All participants are required to register for the competition**
 
-- Sign up here to participate and receive updates: [Google Form](https://forms.gle/5J8Yuh41Lv8GAF7w8)
+- Sign up here to participate and receive updates: [Google Form](https://forms.gle/46DZUGGzk2wdS64z7)
 - For info please contact: SafeChallenge2025@gmail.com
 - You can also create an issue: [https://github.com/stresearch/SAFE](https://github.com/stresearch/SAFE)
 - See instructions on how to submit and [🆘 Helpful Stuff](#-helpful-stuff), [debug example](debug_example.md), open issues for reference or join our [discord server](https://discord.gg/bxNsutKmTH)
 
-## 📜 Paper Submission and Dates
+## 📢 Results Sharing and Poster Session
+In addition to leaderboard rankings and technical evaluations, participants will have the opportunity to share insights, methodologies, and lessons learned through an optional poster session at the APAI Workshop at ICCV 2025. Participants will be invited to present a poster at the workshop, showcasing their approach and findings to fellow researchers, practitioners, and attendees. To facilitate this engagement, we will collect 250-word abstracts in advance. These abstracts should briefly describe your method, key innovations, and any noteworthy performance observations. Submission details and deadlines will be announced on the challenge website. This is a valuable opportunity to contribute to community knowledge, exchange ideas, and build collaborations around advancing synthetic video detection.
 
-All papers for this special session undergo the regular review procedure and must be submitted through the workshop paper submission system following the link given on home page: [https://www.ihmmsec.org](https://www.ihmmsec.org). For this special session in particular, authors must select the track "COMPETITION TRACK" on the submission website during the submission.
+## 🧠 Challenge Tasks
+The SAFE: Synthetic Video Challenge at APAI @ ICCV 2025 will launch with the following tasks:
 
-- ~~Practice Submission Opens: February 26, 2025~~
-- ~~Competition Opens: March 3, 2025~~
-- Round 1 Submission deadline: May 05, 2025 (the papers accepted in Round 1 will be published in the proceedings for IH&MMSEC 2025 and will be presented during the oral session of the conference)
-- Round 2 Submission deadline: June 02, 2025 (performers participating in Round 1 whose algorithms score well in the system will be invited to present a poster at the IH&MMSEC workshop)
-
-For any question regarding paper submission, please contact chairs: acm.ihmmsec25@gmail.com.
-
-## 📝 Tasks  
-
-[![](pilot_grid.png)](pilot_grid.mp4)
-
-The competition will consist of three detection tasks. For each task, the object is to detect if an audio file contains machine generated speech. Not all tasks will be open at the same time. 
-- Practice (✅ Open): A practice task to troubleshoot model submission.
+🚀 Pilot: To support early experimentation and lower barriers to entry, the challenge will also offer a pilot task using a smaller subset of the dataset. This  allows participants to test initial submission logistics and understand task dynamics before full submissions.
         [https://huggingface.co/spaces/safe-challenge/SAFEChallengePractice](https://huggingface.co/spaces/safe-challenge/SAFEChallengePractice)
-- Task 1 (✅ Open): Detection of Generated Audio. Audio files are unmodified from the original output from the models or the pristine sources.
-        [https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask1](https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask1)
-- Task 2 (✅ Open): Detection of Processed Audio. Audio files will be compressed with several common audio compression codecs. The audio files will also be resampled according to several sampling rates. Only the geneated files are augmented. The pristines remain the same.
-        [https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask2](https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask2)
-- Task 3 (✅ Open): Detection of Laundered Audio. Audio files will be laundered to bypass detection. Only the geneated files are laundered. The pristines remain the same.
- 	[https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask3](https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask3)
 
+🎯Task 1: Detection of Fully Synthetic Video Content
+Participants will build and benchmark models that detect fully synthetic video clips generated by a range of state-of-the-art techniques, including text-to-video, image-to-video, and video diffusion models. The focus will be on generalization to unseen generators, robustness to visual variability, and applicability to real-world forensics workflows.
 
+🔮 Additional tasks will be announced leading up to ICCV 2025. These may explore areas such as manipulation detection, attribution of generative models, laundering detection, or characterization of generative content. Stay tuned for updates on new challenge tracks and associated datasets.
 
 ## 📈 Data
-
-The dataset will consist of human and machine generated speech audio tracks. 
-
-- Human generated speech will be sourced from multiple sources and in multiple languages including but not limited to high quality in-studio and lower quality in-the-wild online recordings.
-- Machine generated speech will be constructed using several SOTA TTS (text-to-speech) models. The models will be either open-source or closed-source.
-- The audio files will vary in length but will be no longer than 60 seconds.
-- Compression formats will also vary. (See practice submission and dataset on how to load the input data)
-- The dataset will be balanced across sources. Each source (source of real audio and source of generated audio) will have an equal number of samples. 
+ 
 - **This competition will be fully blind.** No data will be released. Only a small sample dataset will be released as part of a sample model.
   
 ## 🤖 Model Submission
@@ -141,7 +97,7 @@ Once your model is ready, it's time to submit:
 We provide an example model submission repo and a practice competition for troubleshooting.
 - Take a look at an example model repo: [https://huggingface.co/safe-challenge/safe-example-submission](https://huggingface.co/safe-challenge/safe-example-submission)
 - We encourage you to submit to a practice competition: [https://huggingface.co/spaces/safe-challenge/SAFEChallengePractice](https://huggingface.co/spaces/safe-challenge/SAFEChallengePractice)
-- It's using this pracice dataset: [https://huggingface.co/datasets/safe-challenge/safe-challenge-practice-dataset](https://huggingface.co/datasets/safe-challenge/safe-challenge-practice-dataset)
+- It's using this practice dataset: [https://huggingface.co/datasets/safe-challenge/safe-challenge-practice-dataset](https://huggingface.co/datasets/safe-challenge/safe-challenge-practice-dataset)
 - 💡 To reproduce all the steps in the submission locally, take a look at the debugging example: [debug example](debug_example.md)
 - You won't be able to see any detailed error if your submission fails since it's run in a private space. *You can open a ticket or email us with your submission id, and we can look up the logs.* The easiest way is to trouble shoot locally using the above example.
 - *🔥New* [Example on including a custom environment in your model repo](https://huggingface.co/safe-challenge/safe-example-submission-custom-env)
@@ -154,12 +110,14 @@ The competition page will maintain a public leaderboard and a private leaderboar
 
 <img width="1572" alt="image" src="https://github.com/user-attachments/assets/ec4339ef-589b-4f76-ae2f-a03a6ed6d7d3" />
 
-- After the competition closes, we will provide additional metrics broken down by source and other data attributes.
-- This is why we ask you to provide a continous decision score for every input example in addition to a hard binary decision.
+To enable these deeper analyses and fairness evaluations, all participants are required to submit both:
+A hard binary prediction (synthetic vs. real)
+A continuous confidence score for each input sample
+This design enables richer insight into system calibration, decision boundaries, and detection confidenc
 
 ## ⚖️ Rules
 
-To ensure a fair and rigorous evaluation process for the SAFE: Synthetic Audio Forensics Evaluation Challenge (SAFE), the following rules must be adhered to by all participants:
+To ensure a fair and rigorous evaluation process for the Synthetic and AI Forensic Evaluations (SAFE) - Synthetic Video Challenge Registration, the following rules must be adhered to by all participants:
 
 1. **Leaderboard**:
    - The competition will maintain both a public and a private leaderboard.
@@ -170,11 +128,11 @@ To ensure a fair and rigorous evaluation process for the SAFE: Synthetic Audio F
    - Participants will be limited in submissions per day.
 
 3. **Confidentiality**:
-   - Participants agree not to publicly compare their results with those of other participants until the other participant’s results are published outside of the IH&MMSEC2025 venue.
+   - Participants agree not to publicly compare their results with those of other participants until the other participant’s results are published outside of the conference venue.
    - Participants are free to use and publish their own results independently.
 
 4. **Compliance**:
    - Participants must comply with all rules and guidelines provided by the organizers.
    - Failure to comply with the rules may result in disqualification from the competition and exclusion from future evaluations.
 
-By participating in the SAFE challenge, you agree to adhere to these evaluation rules and contribute to the collaborative effort to advance the field of audio forensics.
+By participating in the SAFE challenge, you agree to adhere to these evaluation rules and contribute to the collaborative effort to advance the field of video forensics.
