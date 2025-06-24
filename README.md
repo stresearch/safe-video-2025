@@ -73,42 +73,40 @@ The SAFE: Synthetic Video Challenge at APAI @ ICCV 2025 will consist of several 
 
 This is a script based competetion. No data will be released before the competition. A subset of the data may be released after the competition. Competition will be hosted on [Huggingface Hub](https://huggingface.co/collections/safe-challenge/video-challenge-2025-685437e7a269a56e9d310ea8). There will be a limit to number of submissions per day. 
 
-### 📂 1. Create Model Repo  
+### 📂 Create Model Repo  
 Participants will be required to submit their model to be evaluated on the dataset by creating a [huggingface](https://huggingface.co/new) model repository. Please use [the example model repo](https://huggingface.co/safe-challenge/safe-video-example-submission) as a template.
 - **The model that you submit will remain private**. No one inlcuding the challenge organizers will have access to the model repo unless you decide to make the repo public.
-- The model will be expected to read in the dataset and output file containing a **id, binary decision, detection score,** for every input example.
 - The dataset will be automatically downloaded to `/tmp/data` inside the container during the evaluation run. See example model on how to load it.
+- The model will be expected to read in the dataset and output file containing a **id, binary decision, detection score,** for every input example.
 - The only requirement is to have a `script.py` in the top level of the repo that saves a `submission.csv` file with the following columns. See [sample practice submission file](sample_practice_submission.csv).
   - `id` : id of the example, strig
   - `pred` : binary decision, string, "generated" or "real"
   - `score`: decision score such as log likelihood score. Postive scores correspond to generated and negative to real. (This is optional and not used in evaluation but will help with analysis later)  
 - All submissions will be evaluated using the same resources: NVIDIA `L4` GPU instance. It has 8vCPUs, 30GB RAM, 24GB VRAM.
 - All submissions will be evaluated using the same container based [nvidia/cuda:12.6.2-cudnn-runtime-ubuntu24.04](https://hub.docker.com/layers/nvidia/cuda/12.6.2-cudnn-runtime-ubuntu24.04/images/sha256-3e6da5b4b9fb377bde3427725c31bf2e926a975a783a9131f7ec6da7705fff85) image
-- - 
-  - This is the image file for the container Dockerfile: [https://github.com/huggingface/competitions/blob/main/Dockerfile](https://github.com/huggingface/competitions/blob/main/Dockerfile)
-  - Docker Image: [https://hub.docker.com/r/huggingface/competitions/tags](https://hub.docker.com/r/huggingface/competitions/tags)
-  - Requirements File: [requirements.txt](requirements.txt)
-  - If you'd like to add another package to the requirments file create an issue here: [https://github.com/stresearch/SAFE](https://github.com/stresearch/SAFE)
+  - Default [`requirments.txt`](requirements.txt) file will be installed in the eval environment
+  - You can optionally provide a custom `requirements.txt` just include it in the top level of your submission repo (see [the example model repo](https://huggingface.co/safe-challenge/safe-video-example-submission)). Make sure to include `datasets` to read the dataset file.
   - **During evalation, container will not have access to the internet**. Participants should include all other required dependencies in the model repo.
   - **💡 Remember: you can add anything to your model repo** like models, python packages, etc.
+- We encourage everyone to test your models locally using a debug dataset. See [debug example](debug_example.md)
 
-### 🔘 2. Submit  
+### 🔘 Submit  
 Once your model is ready, it's time to submit:   
   - Go the task submision space (there is a seperate space for every task)
   - Login with your Huggingface Credentials
-  - Teams consisting of multiple individuals should plan to submit under one Huggingface account to facilitate review and analysis results
-  - Enter the name of your model e.g. `safe-challenge/safe-example-submission` and click submit! 🎉
-  - Please use the same user name for all your submissions from the same team.
+  - Teams consisting of multiple individuals should plan to submit under one Huggingface account to facilitate review and analysis results and use the same team name
+  - Enter the the repo of your model e.g. `safe-challenge/safe-example-submission` and click submit! 🎉
+  - You can check the status of your submission under `My Submissions` page. 
+  - If the status is failed, you can debug locally or reach out to us via [email](SafeChallenge2025@gmail.com) or on our [discord server](https://discord.gg/bxNsutKmTH). Just include the task and submission id. We are happy to debug.
 
-### 🆘 Helpful Stuff
-
-We provide an example model submission repo and a practice competition for troubleshooting.
-- Take a look at an example model repo: [https://huggingface.co/safe-challenge/safe-example-submission](https://huggingface.co/safe-challenge/safe-example-submission)
-- We encourage you to submit to a practice competition: [https://huggingface.co/spaces/safe-challenge/SAFEChallengePractice](https://huggingface.co/spaces/safe-challenge/SAFEChallengePractice)
-- It's using this practice dataset: [https://huggingface.co/datasets/safe-challenge/safe-challenge-practice-dataset](https://huggingface.co/datasets/safe-challenge/safe-challenge-practice-dataset)
-- 💡 To reproduce all the steps in the submission locally, take a look at the debugging example: [debug example](debug_example.md)
-- You won't be able to see any detailed error if your submission fails since it's run in a private space. *You can open a ticket or email us with your submission id, and we can look up the logs.* The easiest way is to trouble shoot locally using the above example.
-- *🔥New* [Example on including a custom environment in your model repo](https://huggingface.co/safe-challenge/safe-example-submission-custom-env)
+### 🆘 How to get help
+We provide an example model submission repo and a local debug example:
+- Take a look at an example model repo: [https://huggingface.co/safe-challenge/safe-video-example-submission](https://huggingface.co/safe-challenge/safe-video-example-submission)
+- To reproduce all the steps in the submission locally, take a look at the debugging example: [debug example](debug_example.md)
+<!-- - We encourage you to submit to a practice competition: [https://huggingface.co/spaces/safe-challenge/SAFEChallengePractice](https://huggingface.co/spaces/safe-challenge/SAFEChallengePractice) -->
+<!-- - It's using this practice dataset: [https://huggingface.co/datasets/safe-challenge/safe-challenge-practice-dataset](https://huggingface.co/datasets/safe-challenge/safe-challenge-practice-dataset) -->
+- You won't be able to see any detailed error if your submission fails since it's run in a private space. *Just reach out to us via [email](SafeChallenge2025@gmail.com) or on our [discord server](https://discord.gg/bxNsutKmTH) and we can look up the logs.* The easiest way is to trouble shoot locally using the above example.
+<!-- - *🔥New* [Example on including a custom environment in your model repo](https://huggingface.co/safe-challenge/safe-example-submission-custom-env) -->
 
 ## 🔍 Evaluation
 
