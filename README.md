@@ -22,14 +22,19 @@ To advance the state of the art in video forensics, we are launching a funded ev
 Sign up here to participate and receive updates: [Google Form](https://forms.gle/46DZUGGzk2wdS64z7)
 
 ## 🥇 Detailed Leaderboard
+coming soon ...
+ <!-- 
+ 
 [Public Leaderboard](https://safe-challenge-leaderboard-public.hf.space)
-<!--  [![leaderboard](leaderboard_latest.png)](leaderboard_latest.png) -->
+[![leaderboard](leaderboard_latest.png)](leaderboard_latest.png) 
 <iframe
 	src="https://safe-challenge-leaderboard-public.hf.space"
 	frameborder="0"
 	width="850"
 	height="450"
 ></iframe>
+
+-->
 
 
 ## 🏆 Prize
