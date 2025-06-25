@@ -2,7 +2,7 @@ export HF_TOKEN=$(cat ~/.cache/huggingface/token)
 export LOCAL_CACHE=$(pwd)
 docker run -it --rm --gpus all \
   -e SAFE_DATASET_REPO=safe-challenge/video-challenge-pilot-debug \
-  -e MODEL_REPO=safe-challenge/video-challenge-pilot-debug \
+  -e MODEL_REPO=safe-challenge/safe-video-example-submission \
   -e HF_TOKEN=$HF_TOKEN \
   -e PYTHONUNBUFFERED=1 \
   -w /app/debug \
