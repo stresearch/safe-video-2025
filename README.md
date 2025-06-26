@@ -19,7 +19,11 @@
 
 To advance the state of the art in video forensics, we are launching a funded evaluation challenge at the [Authenticity and Provenance in the Age of Generative AI (APAI) workshop](https://sites.google.com/berkeley.edu/apai-iccv2025) at ICCV 2025. This challenge will drive innovation in detecting and attributing fully synthetic and manipulated video content. It will focus on several critical dimensions, including generalizability across diverse visual domains, robustness against evolving generative video techniques, and scalability for real-world deployment. As generative video technologies rapidly advance—with increasing accessibility and sophistication of image-to-video, text-to-video, and adversarially optimized pipelines—the need for effective and reliable solutions to authenticate visual content has become urgent. Sponsored by the ULRI Digital Safety Research Institute, this initiative aims to mobilize the research community to confront these challenges and strengthen global efforts in media integrity and trust. 
 
-Sign up here to participate and receive updates: [Google Form](https://forms.gle/46DZUGGzk2wdS64z7)
+**All participants are required to register for the competition**
+
+- Sign up here to participate and receive updates: [Google Form](https://forms.gle/46DZUGGzk2wdS64z7)
+- For info please contact: SafeChallenge2025@gmail.com
+- See instructions on how to submit and [🆘 Helpful Stuff](#-helpful-stuff), [debug example](debug_example.md), open issues for reference or join our [discord server](https://discord.gg/bxNsutKmTH)
 
 ## 🥇 Detailed Leaderboard
 coming soon ...
@@ -27,12 +31,6 @@ coming soon ...
 ## 🏆 Prize
 
 The most promising solutions may be eligible for research grants to further advance their development. A travel stipend will be available to the highest-performing teams to support attendance at the APAI workshop at ICCV 2025, where teams can showcase their technical approach and results.
-
-**All participants are required to register for the competition**
-
-- Sign up here to participate and receive updates: [Google Form](https://docs.google.com/forms/d/1kiG8FF84-3e9dated4nHF0IeuCIbxNwAyxDRTTkljBU)
-- For info please contact: SafeChallenge2025@gmail.com
-- See instructions on how to submit and [🆘 Helpful Stuff](#-helpful-stuff), [debug example](debug_example.md), open issues for reference or join our [discord server](https://discord.gg/bxNsutKmTH)
 
 ## 📢 Results Sharing and Poster Session
 In addition to leaderboard rankings and technical evaluations, participants will have the opportunity to share insights, methodologies, and lessons learned through an optional poster session at the APAI Workshop at ICCV 2025. Participants will be invited to present a poster at the workshop, showcasing their approach and findings to fellow researchers, practitioners, and attendees. To facilitate this engagement, we will collect 250-word abstracts in advance. These abstracts should briefly describe your method, key innovations, and any noteworthy performance observations. Submission details and deadlines will be announced on the challenge website. This is a valuable opportunity to contribute to community knowledge, exchange ideas, and build collaborations around advancing synthetic video detection.
