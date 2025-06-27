@@ -1,7 +1,9 @@
 torch
-av
+sklearn
 torchvision
-torchcodec
-datasets
+av
 pandas
 tqdm
+datasets
+pytorch_lightning
+torchmetrics
